@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/style/style.css">
+    <title>Weather Forecast</title>
+</head>
+
+<body>
+    <div id="container">
+        <form action="" id="search">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="search" id="city_name" name="city_name" placeholder="Buscar cidade">
+            <button type="submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+
+        <div id="weather" class="show">
+            <h1 id="title">Recife, BR</h1>
+
+            <div id="infos">
+                <div id="temp">
+                    <img id="temp_img" src="https://openweathermap.org/img/wn/04d@2x.png" alt="Weather Icon" id="weather_icon">
+                    <div>
+                        <p id="temp_value">32<sup>°C</sup></p>
+                        <p id="description">Nublado</p>
+                    </div>
+                </div>
+
+                <div id="other_infos">
+                    <div class="info">
+                        <i id="temp_max_icon" class="fa-solid fa-temperature-high"></i>
+                        <div>
+                            <h2>Temp. max</h2>
+                            <p id="temp_max">35<sup>°C</sup></p>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <i id="temp_min_icon" class="fa-solid fa-temperature-low"></i>
+                        <div>
+                            <h2>Temp. min</h2>
+                            <p id="temp_min">12<sup>°C</sup></p>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <i id="humidity_icon" class="fa-solid fa-tint"></i>
+                        <div>
+                            <h2>Humidade</h2>
+                            <p id="humidity">80%</p>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <i id="wind_icon" class="fa-solid fa-wind"></i>
+                        <div>
+                            <h2>Velocidade do vento</h2>
+                            <p id="wind_speed">10 km/h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="alert"></div>
+        
+        <script src="src/js/script.js"></script>
+        
+    </div>
+</body>
+
+</html>
