@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* reset */
+
 * {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -13,7 +13,7 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* variáveis */
+
 :root {
     --font-thin: 100;
     --font-light: 300;
@@ -24,7 +24,7 @@
     --font-black: 900;
 }
 
-/* body */
+
 body {
     display: flex;
     justify-content: center;
@@ -34,7 +34,7 @@ body {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
-/* container */
+
 #container {
     display: flex;
     flex-direction: column;
@@ -57,7 +57,7 @@ body {
     animation: fadeIn 0.5s ease;
 }
 
-/* busca */
+
 #search {
     display: flex;
     align-items: center;
@@ -122,7 +122,7 @@ body {
     transform: scale(0.95);
 }
 
-/* weather */
+
 #weather {
     display: none;
     margin-top: 10px;
@@ -141,14 +141,12 @@ body {
     font-weight: var(--font-semibold);
 }
 
-/* infos */
 #infos {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-/* card temperatura */
 #temp {
     display: flex;
     align-items: center;
@@ -175,14 +173,13 @@ body {
     opacity: 0.9;
 }
 
-/* grid infos */
+
 #other_infos {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
 
-/* cards pequenos */
 .info {
     display: flex;
     align-items: center;
@@ -197,7 +194,6 @@ body {
     backdrop-filter: blur(5px);
 }
 
-/* conteúdo dos cards */
 .info i {
     font-size: 18px;
 }
@@ -230,12 +226,12 @@ body {
     color: #0a628b;
 }
 
-/* Oculto por padrão */
+
 #alert {
     display: none;
 }
 
-/* Estilo quando houver erro */
+
 #alert:not(:empty) {
     display: flex;
     flex-direction: column;
@@ -255,15 +251,14 @@ body {
     color: white;
 }
 
-/* Ajuste crucial para a imagem não "explodir" na tela */
+
 #alert img {
-    width: 100%;        /* Faz a imagem respeitar a largura do alerta */
-    max-width: 150px;   /* Define um tamanho máximo razoável */
-    height: auto;       /* Mantém a proporção */
+    width: 100%;        
+    max-width: 150px;   
+    height: auto;       
     margin-top: 10px;
 }
 
-/* animação */
 @keyframes fadeIn {
     from {
         opacity: 0;
