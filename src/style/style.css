@@ -230,6 +230,39 @@ body {
     color: #0a628b;
 }
 
+/* Oculto por padrão */
+#alert {
+    display: none;
+}
+
+/* Estilo quando houver erro */
+#alert:not(:empty) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+    
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%; 
+    
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    color: white;
+}
+
+/* Ajuste crucial para a imagem não "explodir" na tela */
+#alert img {
+    width: 100%;        /* Faz a imagem respeitar a largura do alerta */
+    max-width: 150px;   /* Define um tamanho máximo razoável */
+    height: auto;       /* Mantém a proporção */
+    margin-top: 10px;
+}
+
 /* animação */
 @keyframes fadeIn {
     from {
